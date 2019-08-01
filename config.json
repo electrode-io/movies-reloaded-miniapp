@@ -1,0 +1,6 @@
+{
+  "TheMovieDB": {
+    "Uri": "https://api.themoviedb.org/3/",
+    "APIKey": ""
+  }
+}

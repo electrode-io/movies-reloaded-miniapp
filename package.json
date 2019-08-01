@@ -1,0 +1,94 @@
+{
+  "name": "movies-reloaded-miniapp",
+  "homepage": "https://electrode.io",
+  "author": "The Electrode Native Team",
+  "contributors": [
+    {
+      "name": "a♯b♭"
+    },
+    {
+      "name": "belemaire"
+    },
+    {
+      "name": "deepueg"
+    },
+    {
+      "name": "gmbharath12"
+    },
+    {
+      "name": "krunalsshah"
+    },
+    {
+      "name": "lianci"
+    },
+    {
+      "name": "rmercille"
+    }
+  ],
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "private": false,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "flow": "flow",
+    "lint": "standard '**/*.js'",
+    "precommit": "npm run lint && npm test && npm docs",
+    "test": "jest"
+  },
+  "dependencies": {
+    "ern-navigation": "^1.0.0",
+    "moment": "^2.24.0",
+    "react": "16.8.3",
+    "react-native": "0.59.4",
+    "react-native-progress-wheel": "^1.0.4",
+    "react-native-snap-carousel": "^3.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/runtime": "^7.5.4",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "eslint-plugin-flowtype": "^3.10.1",
+    "flow-bin": "^0.92.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.55.0",
+    "react-test-renderer": "16.8.3",
+    "standard": "^12.0.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|@react-native-community|ernnavigation-api)"
+    ],
+    "moduleNameMapper": {
+      "\\.(png|jpg|gif)$": "RelativeImageStub"
+    },
+    "testEnvironment": "node"
+  },
+  "ern": {
+    "moduleName": "MoviesReloaded",
+    "moduleType": "ern-miniapp",
+    "version": "0.36.4"
+  },
+  "keywords": [
+    "ern-miniapp"
+  ],
+  "standard": {
+    "env": {
+      "jest": true
+    },
+    "globals": [
+      "before",
+      "describe",
+      "expect",
+      "it"
+    ],
+    "ignore": [
+      "flow-typed"
+    ],
+    "parser": "babel-eslint",
+    "plugins": [
+      "flowtype"
+    ]
+  }
+}
