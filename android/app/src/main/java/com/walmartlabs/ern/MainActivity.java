@@ -21,6 +21,7 @@ import com.ern.api.impl.navigation.MiniAppNavRequestListener;
 import com.ern.api.impl.navigation.OnNavBarItemClickListener;
 import com.ern.api.impl.navigation.Route;
 import com.ernnavigationApi.ern.model.NavigationBar;
+import com.facebook.react.ReactRootView;
 
 import org.json.JSONObject;
 
@@ -142,6 +143,11 @@ public class MainActivity extends AppCompatActivity implements ElectrodeReactFra
     @Override
     public void removeReactNativeView(@NonNull String componentName) {
         mElectrodeReactNavDelegate.removeMiniAppView(componentName);
+    }
+
+    @Override
+    public void removeReactNativeView(@NonNull String componentName, @NonNull ReactRootView reactRootView) {
+        mElectrodeReactNavDelegate.removeMiniAppView(componentName, reactRootView);
     }
 
     @Override
