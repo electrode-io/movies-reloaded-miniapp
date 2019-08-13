@@ -48,7 +48,7 @@ const interpolatable = [
   'padding', 'paddingVertical', 'paddingHorizontal', 'paddingLeft', 'paddingRight', 'paddingTop', 'paddingBottom',
   'margin', 'marginVertical', 'marginHorizontal', 'marginLeft', 'marginRight', 'marginTop', 'marginBottom',
   'borderWidth', 'borderLeftWidth', 'borderRightWidth', 'borderTopWidth', 'borderBottomWidth',
-  'opacity', 'elevation', 'tintColor'
+  'opacity', 'tintColor'
 ]
 
 if (Platform.OS === 'android') {

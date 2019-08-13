@@ -39,24 +39,24 @@
     "test": "jest"
   },
   "dependencies": {
-    "ern-navigation": "^1.0.0",
-    "moment": "^2.24.0",
+    "ern-navigation": "^1.1.2",
+    "moment": "2.24.0",
     "react": "16.8.3",
     "react-native": "0.59.4",
-    "react-native-progress-wheel": "^1.0.4",
-    "react-native-snap-carousel": "^3.8.0"
+    "react-native-progress-wheel": "1.0.4",
+    "react-native-snap-carousel": "3.8.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.4",
-    "@babel/runtime": "^7.5.4",
-    "babel-eslint": "^10.0.1",
-    "babel-jest": "^24.8.0",
-    "eslint-plugin-flowtype": "^3.10.1",
-    "flow-bin": "^0.92.0",
-    "jest": "^24.8.0",
-    "metro-react-native-babel-preset": "^0.55.0",
+    "@babel/core": "7.5.5",
+    "@babel/runtime": "7.5.5",
+    "babel-eslint": "10.0.2",
+    "babel-jest": "24.8.0",
+    "eslint-plugin-flowtype": "3.12.2",
+    "flow-bin": "0.92.1",
+    "jest": "24.8.0",
+    "metro-react-native-babel-preset": "0.55.0",
     "react-test-renderer": "16.8.3",
-    "standard": "^12.0.1"
+    "standard": "12.0.1"
   },
   "jest": {
     "preset": "react-native",
@@ -71,7 +71,7 @@
   "ern": {
     "moduleName": "MoviesReloaded",
     "moduleType": "ern-miniapp",
-    "version": "0.36.4"
+    "version": "0.37.0"
   },
   "keywords": [
     "ern-miniapp"

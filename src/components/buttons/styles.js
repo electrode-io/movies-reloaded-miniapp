@@ -90,7 +90,7 @@ export default {
         borderColor: colors.black,
         marginTop: 14,
         marginBottom: 6,
-        elevation: 0
+        ...platformSelect({ elevation: 0 }, {})
       },
       text: {
         ...base.text
@@ -151,7 +151,7 @@ export default {
         borderColor: colors.black,
         marginTop: 14,
         marginBottom: 6,
-        elevation: 0
+        ...platformSelect({ elevation: 0 }, {})
       },
       text: {
         ...base.text,
