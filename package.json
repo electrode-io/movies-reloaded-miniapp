@@ -28,6 +28,14 @@
       "name": "rmercille"
     }
   ],
+  "files": [
+    "src/",
+    "app.json",
+    "config.json",
+    "index.android.js",
+    "index.ios.js"
+  ],
+  "main": "index.js",
   "version": "0.0.1",
   "license": "Apache-2.0",
   "private": false,
