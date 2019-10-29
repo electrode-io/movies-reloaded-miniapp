@@ -42,7 +42,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "flow": "flow",
-    "lint": "standard '**/*.js'",
+    "lint": "standard 'src/**/*.js'",
     "precommit": "npm run lint && npm test && npm docs",
     "test": "jest"
   },
