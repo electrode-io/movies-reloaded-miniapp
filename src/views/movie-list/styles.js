@@ -1,16 +1,16 @@
-import { StyleSheet, Platform } from 'react-native'
-import colors from '../../util/colors.json'
+import {Platform, StyleSheet} from 'react-native';
+import colors from '../../util/colors.json';
 
-const BORDER_RADIUS = 10
-const BASE_FONT_SIZE = Platform.OS === 'android' ? 12 : 16
+const BORDER_RADIUS = 10;
+const BASE_FONT_SIZE = Platform.OS === 'android' ? 12 : 16;
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.black
+    backgroundColor: colors.black,
   },
   row: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   background: {
     position: 'absolute',
@@ -18,21 +18,21 @@ export default StyleSheet.create({
     left: 0,
     right: 0,
     height: '100%',
-    resizeMode: 'cover'
+    resizeMode: 'cover',
   },
   carousel: {
-    paddingVertical: 16
+    paddingVertical: 16,
   },
   card: {
     flex: 1,
     borderRadius: BORDER_RADIUS,
-    backgroundColor: colors.darkestGrey
+    backgroundColor: colors.darkestGrey,
   },
   posterContainer: {
     flex: 1,
     borderRadius: BORDER_RADIUS,
     borderBottomLeftRadius: 0,
-    borderBottomRightRadius: 0
+    borderBottomRightRadius: 0,
   },
   poster: {
     width: '100%',
@@ -40,45 +40,45 @@ export default StyleSheet.create({
     borderRadius: BORDER_RADIUS,
     borderBottomLeftRadius: 0,
     borderBottomRightRadius: 0,
-    justifyContent: 'flex-start'
+    justifyContent: 'flex-start',
   },
   cardCaption: {
     padding: 16,
-    backgroundColor: 'rgba(0,0,0,.5)'
+    backgroundColor: 'rgba(0,0,0,.5)',
   },
   cardTitle: {
     color: colors.white,
-    fontSize: BASE_FONT_SIZE
+    fontSize: BASE_FONT_SIZE,
   },
 
   movieDetails: {
     padding: 16,
     flexDirection: 'row',
     alignItems: 'center',
-    flex: 1
+    flex: 1,
   },
   movieDetailsHeader: {
     marginLeft: 8,
     flex: 1,
-    flexDirection: 'column'
+    flexDirection: 'column',
   },
   movieTitle: {
     color: '#FFF',
     fontWeight: 'bold',
-    fontSize: BASE_FONT_SIZE * 1.2
+    fontSize: BASE_FONT_SIZE * 1.2,
   },
   movieRatingContainer: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   movieRatingText: {
     alignSelf: 'center',
     fontSize: BASE_FONT_SIZE * (5 / 6),
-    color: '#FFF'
+    color: '#FFF',
   },
   movieOverview: {
     color: '#FFF',
     fontSize: BASE_FONT_SIZE * (5 / 6),
-    marginVertical: 8
-  }
-})
+    marginVertical: 8,
+  },
+});

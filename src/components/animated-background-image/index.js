@@ -1,1 +1,1 @@
-export { default } from './animated-background-image'
+export {default} from './animated-background-image';

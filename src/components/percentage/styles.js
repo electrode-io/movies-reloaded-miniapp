@@ -1,9 +1,9 @@
-import { StyleSheet } from 'react-native'
+import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   view: {
     position: 'relative',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   childrenContainer: {
     position: 'absolute',
@@ -11,13 +11,13 @@ const styles = StyleSheet.create({
     left: 0,
     alignItems: 'center',
     flexDirection: 'row',
-    alignSelf: 'center'
+    alignSelf: 'center',
   },
   children: {
     alignSelf: 'center',
     flexDirection: 'column',
-    flex: 1
-  }
-})
+    flex: 1,
+  },
+});
 
-export default styles
+export default styles;

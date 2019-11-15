@@ -1,22 +1,23 @@
-import { StyleSheet, Platform } from 'react-native'
-import colors from '../../util/colors.json'
+import {Platform, StyleSheet} from 'react-native';
+import colors from '../../util/colors.json';
 
-const BASE_FONT_SIZE = Platform.OS === 'android' ? 12 : 16
+const BASE_FONT_SIZE = Platform.OS === 'android' ? 12 : 16;
 const textShadow = {
   textShadowColor: 'rgba(0, 0, 0, 1)',
   textShadowOffset: {
-    width: 2, height: 2
+    width: 2,
+    height: 2,
   },
-  textShadowRadius: 10
-}
+  textShadowRadius: 10,
+};
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.black
+    backgroundColor: colors.black,
   },
   row: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   background: {
     position: 'absolute',
@@ -24,81 +25,81 @@ export default StyleSheet.create({
     left: 0,
     right: 0,
     height: '100%',
-    resizeMode: 'cover'
+    resizeMode: 'cover',
   },
   movieRatingText: {
     alignSelf: 'center',
     fontSize: BASE_FONT_SIZE * (5 / 6),
-    color: '#FFF'
+    color: '#FFF',
   },
   movieTitle: {
     ...textShadow,
     color: '#FFF',
-    fontSize: BASE_FONT_SIZE * 1.5
+    fontSize: BASE_FONT_SIZE * 1.5,
   },
   movieTagline: {
     color: '#FFF',
     fontStyle: 'italic',
     fontSize: BASE_FONT_SIZE,
-    marginBottom: 8
+    marginBottom: 8,
   },
   tabBarContainer: {
-    backgroundColor: 'rgba(0,0,0,.7)'
+    backgroundColor: 'rgba(0,0,0,.7)',
   },
   tabBar: {
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   tab: {
     flex: 1,
     paddingHorizontal: 8,
     paddingVertical: 16,
     borderBottomWidth: 5,
-    borderBottomColor: 'transparent'
+    borderBottomColor: 'transparent',
   },
   selectedTab: {
     flex: 1,
     paddingHorizontal: 8,
     paddingVertical: 16,
     borderBottomWidth: 5,
-    borderBottomColor: 'transparent'
+    borderBottomColor: 'transparent',
   },
   tabText: {
     fontSize: BASE_FONT_SIZE,
     textAlign: 'center',
-    color: colors.white
+    color: colors.white,
   },
   selectedTabText: {
     fontSize: BASE_FONT_SIZE,
     textAlign: 'center',
-    color: colors.white
+    color: colors.white,
   },
   tabBarHighlight: {
     position: 'absolute',
     backgroundColor: colors.darkBlue,
     top: -5,
-    height: 5
+    height: 5,
   },
   tabContent: {
-    backgroundColor: 'rgba(0,0,0,.6)'
+    backgroundColor: 'rgba(0,0,0,.6)',
   },
   tabBarPage: {
     position: 'absolute',
     top: 0,
     height: '100%',
-    flex: 1
+    flex: 1,
   },
   tabBarPageContent: {
-    padding: 16
+    padding: 16,
   },
   overview: {
     color: colors.white,
     fontSize: BASE_FONT_SIZE,
-    lineHeight: BASE_FONT_SIZE * 1.5
+    lineHeight: BASE_FONT_SIZE * 1.5,
   },
   overlay: {
     position: 'absolute',
     bottom: 0,
     right: 0,
-    width: 'auto'
-  }
-})
+    width: 'auto',
+  },
+});

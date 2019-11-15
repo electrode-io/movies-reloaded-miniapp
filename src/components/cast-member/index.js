@@ -1,1 +1,1 @@
-export { default } from './cast-member'
+export {default} from './cast-member';
