@@ -1,4 +1,7 @@
 # Movies Reloaded
+
+[![Actions Status][1]][2]
+
 <img src="readme-images/screenshot-list.png" width="300" /> <img src="readme-images/screenshot-details.png" width="300" />
 
 ## Who...
@@ -69,3 +72,6 @@ when constructing the AppNavigator object.
 This product uses the TMDb API but is not endorsed or certified by TMDb.
 
 <img src="https://www.themoviedb.org/assets/2/v4/logos/408x161-powered-by-rectangle-blue-10d3d41d2a0af9ebcb85f7fb62ffb6671c15ae8ea9bc82a2c6941f223143409e.png" height=100 />
+
+[1]: https://github.com/electrode-io/movies-reloaded-miniapp/workflows/main/badge.svg
+[2]: https://github.com/electrode-io/movies-reloaded-miniapp/actions
