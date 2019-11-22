@@ -1,8 +1,8 @@
-import React from 'react'
-import { Image, Animated } from 'react-native'
+import React from 'react';
+import {Animated, Image} from 'react-native';
 
 export default class BlurOverlay extends React.Component {
-  render () {
+  render() {
     const {
       opacity,
       padding,
@@ -10,14 +10,14 @@ export default class BlurOverlay extends React.Component {
       imageOpacity,
       movieTextViewport,
       viewport,
-      backgroundUri
-    } = this.props
+      backgroundUri,
+    } = this.props;
     const position = {
       top: movieTextViewport.y - padding,
       left: movieTextViewport.x - padding,
       width: movieTextViewport.width + padding * 2,
-      height: movieTextViewport.height + padding * 2
-    }
+      height: movieTextViewport.height + padding * 2,
+    };
 
     return (
       <Animated.View
@@ -27,22 +27,21 @@ export default class BlurOverlay extends React.Component {
           overflow: 'hidden',
           borderRadius: padding,
           backgroundColor: '#000000',
-          opacity
-        }}
-      >
+          opacity,
+        }}>
         <Image
-          resizeMode='cover'
-          source={{ uri: backgroundUri }}
+          resizeMode="cover"
+          source={{uri: backgroundUri}}
           style={{
             position: 'absolute',
-            top: -(position.top),
-            left: -(position.left),
+            top: -position.top,
+            left: -position.left,
             ...viewport,
-            opacity: imageOpacity
+            opacity: imageOpacity,
           }}
           blurRadius={blur}
         />
       </Animated.View>
-    )
+    );
   }
 }

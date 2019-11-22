@@ -1,1 +1,1 @@
-export { default } from './cast-list.js'
+export {default} from './cast-list.js';

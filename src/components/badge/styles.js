@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native'
-import colors from '../../util/colors.json'
+import {StyleSheet} from 'react-native';
+import colors from '../../util/colors.json';
 
 const styles = StyleSheet.create({
   container: {
@@ -8,14 +8,14 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     borderRadius: 2,
     marginTop: 4,
-    marginRight: 4
+    marginRight: 4,
   },
   text: {
     color: colors.black,
     fontSize: 8,
     fontWeight: 'bold',
-    textTransform: 'uppercase'
-  }
-})
+    textTransform: 'uppercase',
+  },
+});
 
-export default styles
+export default styles;

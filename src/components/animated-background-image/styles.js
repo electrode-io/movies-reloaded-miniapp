@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   background: {
@@ -7,6 +7,6 @@ export default StyleSheet.create({
     left: 0,
     right: 0,
     height: '100%',
-    resizeMode: 'cover'
-  }
-})
+    resizeMode: 'cover',
+  },
+});

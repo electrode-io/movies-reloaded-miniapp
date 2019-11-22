@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native'
-import colors from '../../util/colors.json'
+import {StyleSheet} from 'react-native';
+import colors from '../../util/colors.json';
 
 const styles = StyleSheet.create({
   container: {
@@ -11,19 +11,19 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     flexDirection: 'row',
     flex: 1,
-    alignItems: 'center'
+    alignItems: 'center',
   },
   content: {
     flexDirection: 'column',
     alignSelf: 'center',
-    flex: 1
+    flex: 1,
   },
   children: {
-    textAlign: 'center'
+    textAlign: 'center',
   },
   spinner: {
-    marginVertical: 16
-  }
-})
+    marginVertical: 16,
+  },
+});
 
-export default styles
+export default styles;

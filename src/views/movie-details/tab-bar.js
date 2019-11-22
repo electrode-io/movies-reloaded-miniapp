@@ -1,52 +1,52 @@
-import React from 'react'
-import { View, Text, TouchableOpacity } from 'react-native'
+import React from 'react';
+import {Text, TouchableOpacity, View} from 'react-native';
 
-import styles from './styles'
+import styles from './styles';
 
-const Tab = ({ caption, index, selected, handleTabPress }) => {
+const Tab = ({caption, index, selected, handleTabPress}) => {
   return (
     <TouchableOpacity
       activeOpacity={1}
       onPress={() => handleTabPress(index)}
-      style={selected ? styles.selectedTab : styles.tab}
-    >
+      style={selected ? styles.selectedTab : styles.tab}>
       <Text style={selected ? styles.selectedTabText : styles.tabText}>
         {caption}
       </Text>
     </TouchableOpacity>
-  )
-}
+  );
+};
 
 export default class TabBar extends React.Component {
-  constructor (props) {
-    super(props)
+  constructor(props) {
+    super(props);
     this.state = {
-      selectedIndex: this.props.selectedIndex || 0
-    }
-    this.handleTabPress = this.handleTabPress.bind(this)
+      selectedIndex: this.props.selectedIndex || 0,
+    };
+    this.handleTabPress = this.handleTabPress.bind(this);
   }
 
-  componentWillUpdate (newProps) {
-    if ('selectedIndex' in newProps && newProps.selectedIndex !== this.props.selectedIndex) {
-      this.setState({ selectedIndex: newProps.selectedIndex })
+  componentWillUpdate(newProps) {
+    if (
+      'selectedIndex' in newProps &&
+      newProps.selectedIndex !== this.props.selectedIndex
+    ) {
+      this.setState({selectedIndex: newProps.selectedIndex});
     }
   }
 
-  handleTabPress = (selectedIndex) => {
-    const { tabs, onTabChange } = this.props
+  handleTabPress = selectedIndex => {
+    const {tabs, onTabChange} = this.props;
     if (tabs && this.state.selectedIndex !== selectedIndex) {
-      this.setState({ selectedIndex }, () => {
-        onTabChange(selectedIndex)
-      })
+      this.setState({selectedIndex}, () => {
+        onTabChange(selectedIndex);
+      });
     }
-  }
+  };
 
-  render () {
-    const {
-      selectedIndex
-    } = this.state
+  render() {
+    const {selectedIndex} = this.state;
 
-    const { tabs } = this.props
+    const {tabs} = this.props;
 
     const renderedTabs = tabs.map((tabCaption, i) => (
       <Tab
@@ -54,16 +54,14 @@ export default class TabBar extends React.Component {
         caption={tabCaption}
         index={i}
         selected={i === selectedIndex}
-        handleTabPress={i => this.handleTabPress(i)}
+        handleTabPress={index => this.handleTabPress(index)}
       />
-    ))
+    ));
 
     return (
       <View style={styles.tabBarContainer}>
-        <View style={styles.tabBar}>
-          {renderedTabs}
-        </View>
+        <View style={styles.tabBar}>{renderedTabs}</View>
       </View>
-    )
+    );
   }
 }
