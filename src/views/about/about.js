@@ -57,11 +57,6 @@ export default class About extends Component {
   }
 
   render() {
-    const renderedContributors =
-      contributors &&
-      contributors.map(
-        person => `${person.name}${person.email ? ` (${person.email})` : ''}`,
-      );
     const Highlight = ({children}) => (
       <Text style={styles.highlight}>{children}</Text>
     );
@@ -80,7 +75,7 @@ export default class About extends Component {
             <Section title="Who...">
               <SubSection>
                 <Question>Contributed to this project?</Question>
-                <Paragraph>{renderedContributors.join(', ')}</Paragraph>
+                <Paragraph>{contributors.join(', ')}</Paragraph>
               </SubSection>
               <SubSection>
                 <Question>Should look at this project?</Question>

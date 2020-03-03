@@ -3,30 +3,14 @@
   "homepage": "https://electrode.io",
   "author": "The Electrode Native Team",
   "contributors": [
-    {
-      "name": "a♯b♭"
-    },
-    {
-      "name": "belemaire"
-    },
-    {
-      "name": "deepueg"
-    },
-    {
-      "name": "friederbluemle"
-    },
-    {
-      "name": "gmbharath12"
-    },
-    {
-      "name": "krunalsshah"
-    },
-    {
-      "name": "lianci"
-    },
-    {
-      "name": "rmercille"
-    }
+    "a♯b♭",
+    "belemaire",
+    "deepueg",
+    "friederbluemle",
+    "gmbharath12",
+    "krunalsshah",
+    "lianci",
+    "rmercille"
   ],
   "files": [
     "src/",
