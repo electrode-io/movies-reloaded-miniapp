@@ -50,7 +50,7 @@
     "moment": "2.24.0",
     "react": "16.8.6",
     "react-native": "0.60.5",
-    "react-native-progress-wheel": "1.0.4",
+    "react-native-progress-wheel": "1.0.5",
     "react-native-snap-carousel": "3.8.0"
   },
   "devDependencies": {
