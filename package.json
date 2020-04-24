@@ -51,7 +51,7 @@
     "react": "16.8.6",
     "react-native": "0.60.5",
     "react-native-progress-wheel": "1.0.4",
-    "react-native-snap-carousel": "3.8.0"
+    "react-native-snap-carousel": "3.8.4"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",
