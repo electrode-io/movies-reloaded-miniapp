@@ -94,9 +94,7 @@ export const interpolateStyles = (interpolater, from, to) => {
       if (!fromHasProp || !toHasProp) {
         if (process.env.NODE_ENV === 'development') {
           console.warn(
-            `Cannot interpolate property "${prop}" from ${from[prop]} to ${
-              to[prop]
-            }.\n\nMissing property in style object`,
+            `Cannot interpolate property "${prop}" from ${from[prop]} to ${to[prop]}.\n\nMissing property in style object`,
             fromHasProp ? to : from,
           );
         }
