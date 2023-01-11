@@ -1,10 +1,3 @@
-/**
- * Loading Overlay
- *
- * @format
- * @flow
- */
-
 import React, {Component} from 'react';
 import {ActivityIndicator, View} from 'react-native';
 import styles from './styles';
