@@ -1,6 +1,23 @@
 {
   "name": "movies-reloaded-miniapp",
-  "homepage": "https://electrode.io",
+  "version": "0.0.1",
+  "private": false,
+  "main": "index.js",
+  "files": [
+    "src/",
+    "app.json",
+    "config.json"
+  ],
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "lint": "eslint .",
+    "start": "react-native start",
+    "test": "jest"
+  },
+  "keywords": [
+    "ern-miniapp"
+  ],
   "author": "The Electrode Native Team",
   "contributors": [
     "a♯b♭",
@@ -12,51 +29,33 @@
     "lianci",
     "rmercille"
   ],
-  "files": [
-    "src/",
-    "app.json",
-    "config.json",
-    "index.android.js",
-    "index.ios.js"
-  ],
-  "main": "index.js",
-  "version": "0.0.1",
   "license": "Apache-2.0",
-  "private": false,
-  "scripts": {
-    "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint .",
-    "flow": "flow check"
-  },
+  "homepage": "https://electrode.io",
   "dependencies": {
-    "ern-navigation": "^1.1.2",
-    "moment": "2.24.0",
-    "react": "16.8.6",
-    "react-native": "0.60.5",
-    "react-native-progress-wheel": "1.0.4",
-    "react-native-snap-carousel": "3.8.0"
+    "ern-navigation": "^1.2.4",
+    "moment": "^2.29.4",
+    "react": "17.0.2",
+    "react-native": "0.66.5",
+    "react-native-progress-wheel": "^1.0.5",
+    "react-native-snap-carousel": "^3.9.1"
   },
   "devDependencies": {
-    "@babel/core": "7.5.5",
-    "@babel/runtime": "7.5.5",
-    "@react-native-community/eslint-config": "0.0.5",
-    "babel-jest": "24.8.0",
-    "eslint": "6.1.0",
-    "flow-bin": "^0.98.0",
-    "jest": "24.8.0",
-    "metro-react-native-babel-preset": "0.56.0",
-    "react-test-renderer": "16.8.6"
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "7.14.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2"
+  },
+  "ern": {
+    "moduleName": "MoviesReloadedMiniapp",
+    "moduleType": "ern-miniapp",
+    "packageManager": "yarn",
+    "version": "0.49.2"
   },
   "jest": {
     "preset": "react-native"
-  },
-  "ern": {
-    "moduleName": "MoviesReloaded",
-    "moduleType": "ern-miniapp",
-    "version": "0.37.0"
-  },
-  "keywords": [
-    "ern-miniapp"
-  ]
+  }
 }

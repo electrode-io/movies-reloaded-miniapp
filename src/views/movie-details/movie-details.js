@@ -175,13 +175,15 @@ export default class MovieDetails extends Component {
     );
   }
 
-  setLayout = (name, props) => ({nativeEvent: {layout}}) => {
-    this.setState({
-      [name]: Object.keys(layout)
-        .filter(prop => props.includes(prop))
-        .reduce((obj, prop) => ({...obj, [prop]: layout[prop]}), {}),
-    });
-  };
+  setLayout =
+    (name, props) =>
+    ({nativeEvent: {layout}}) => {
+      this.setState({
+        [name]: Object.keys(layout)
+          .filter(prop => props.includes(prop))
+          .reduce((obj, prop) => ({...obj, [prop]: layout[prop]}), {}),
+      });
+    };
 
   getPosterUri = (state, props) => {
     const {movie, configuration} = props;

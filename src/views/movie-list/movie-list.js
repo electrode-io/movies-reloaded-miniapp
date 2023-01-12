@@ -160,13 +160,15 @@ export default class MovieList extends Component {
     }
   }
 
-  setLayout = (name, props) => ({nativeEvent: {layout}}) => {
-    this.setState({
-      [name]: Object.keys(layout)
-        .filter(prop => props.includes(prop))
-        .reduce((obj, prop) => ({...obj, [prop]: layout[prop]}), {}),
-    });
-  };
+  setLayout =
+    (name, props) =>
+    ({nativeEvent: {layout}}) => {
+      this.setState({
+        [name]: Object.keys(layout)
+          .filter(prop => props.includes(prop))
+          .reduce((obj, prop) => ({...obj, [prop]: layout[prop]}), {}),
+      });
+    };
 
   render() {
     const {
@@ -209,29 +211,31 @@ export default class MovieList extends Component {
         configuration,
         carouselViewport.height * 0.5,
       )}`;
-    const renderedMovieInfo = !loading && detailViewport && carouselViewport && (
-      <MovieInfo
-        movie={movies[activeMovieIndex]}
-        genres={findGenres(genres, movies[activeMovieIndex].genre_ids)}
-        configuration={configuration}
-        posterBaseUri={posterBaseUri}
-        viewport={detailViewport}
-        animation={animation}
-        onLayout={this.setLayout('movieTextViewport', [
-          'height',
-          'width',
-          'x',
-          'y',
-        ])}
-        onDetailPress={() =>
-          this.navigateInternal('Detail', {
-            movie: movies[activeMovieIndex],
-            configuration,
-            genres,
-          })
-        }
-      />
-    );
+    const renderedMovieInfo = !loading &&
+      detailViewport &&
+      carouselViewport && (
+        <MovieInfo
+          movie={movies[activeMovieIndex]}
+          genres={findGenres(genres, movies[activeMovieIndex].genre_ids)}
+          configuration={configuration}
+          posterBaseUri={posterBaseUri}
+          viewport={detailViewport}
+          animation={animation}
+          onLayout={this.setLayout('movieTextViewport', [
+            'height',
+            'width',
+            'x',
+            'y',
+          ])}
+          onDetailPress={() =>
+            this.navigateInternal('Detail', {
+              movie: movies[activeMovieIndex],
+              configuration,
+              genres,
+            })
+          }
+        />
+      );
 
     const renderedMovieCarousel = !loading && carouselViewport && (
       <MovieCarousel

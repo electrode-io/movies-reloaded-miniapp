@@ -1,8 +1,3 @@
-/**
- * @format
- * @flow
- */
-
 import React, {Component} from 'react';
 import {Animated, TouchableWithoutFeedback} from 'react-native';
 import styles from './styles';

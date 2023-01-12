@@ -41,8 +41,9 @@ const objectToParams = paramObject => {
 const buildAPIUri = (uri, parameters) => {
   const {uri: parameterUri, ...params} = parameters;
   const paramArray = objectToParams(params);
-  const fullUri = `${Config.TheMovieDB.Uri}${uri}${parameterUri ||
-    ''}?api_key=${Config.TheMovieDB.APIKey}`;
+  const fullUri = `${Config.TheMovieDB.Uri}${uri}${
+    parameterUri || ''
+  }?api_key=${Config.TheMovieDB.APIKey}`;
   return paramArray ? `${fullUri}&${paramArray.join('&')}` : fullUri;
 };
 
@@ -92,4 +93,4 @@ const mockedApi = {
   },
 };
 
-export default (Config.TheMovieDB.APIKey ? api : mockedApi);
+export default Config.TheMovieDB.APIKey ? api : mockedApi;
